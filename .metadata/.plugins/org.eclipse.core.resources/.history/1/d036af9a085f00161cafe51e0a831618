@@ -1,0 +1,150 @@
+@mixin triangleBackground {
+	padding: 1em;
+	background-image: url(https://s32.postimg.org/pga5xs82d/triangle.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@mixin radioColumn{
+			-webkit-column-count: 4; /* Chrome, Safari, Opera */
+			-moz-column-count: 4; /* Firefox */
+			column-count: 4;
+			-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+			-moz-column-gap: 40px; /* Firefox */
+			column-gap: 40px;
+			}
+			
+@mixin btnStyle{
+	color: $color1;
+	margin: auto;
+	padding: 10px;
+	margin-left: 43%;
+	background: #1F2324;
+	border: 2px solid white;
+	border-radius: 40%;
+	width: 190px;
+	height: 50px;
+	border-radius: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+
+@mixin responsivePhone{
+
+@media only screen and (max-width: 481px) {
+	#firstHead h1 {
+		font-size: 2em;
+	}
+	#firstDiv a, span {
+		font-size: 0.5em;
+	}
+	#secondHead {
+		height: 28em;
+	}
+	#secondHead input {
+		float: middle;
+		padding-left: 5em;
+		margin-left: 3em;
+	}
+	#secondDiv {
+		width: 10em;
+	}
+	
+
+	
+	#radioBtn {
+		font-size: 15em;
+		height: 10em;
+	}
+	#btn {
+		height: auto;
+		width: auto;
+		font-size: 0.5em;
+	}
+	#movieSection img {
+		width: 100px;
+		height: 100px;
+	}
+	#movieSection {
+		margin-top: auto;
+		height: 24em;
+	}
+	#movieSection a {
+		font-size: 0.3em;
+	}
+	.item {
+		margin-left: -0.5em;
+		width: 100px;
+	}
+	#btn2 {
+		height: auto;
+		width: auto;
+		font-size: 0.5em;
+	}
+	#redSection {
+		height: 27em;
+	}
+	#mailSection span {
+		width: 100%;
+	}
+	#mailSection {
+		height: 20em;
+	}
+	#btn3 {
+		height: auto;
+		width: auto;
+		font-size: 0.8em;
+	}
+}
+
+#mailSection h1 {
+	font-size: 2em;
+}
+}
+
+
+@mixin responsiveTablet{
+@media only screen and (max-width: 923px) {
+	#btn4 {
+		font-size: 0.8em;
+	}
+	#radioBtn {
+		font-size: 1em;
+	}
+#radio{
+height: 39em;
+font-size: 0.6em;
+}
+	#movieSection {
+		height: 35em;
+		img {
+			width: 200px;
+			height: 200px;
+		}
+		
+		a {
+			font-size: 0.5em;
+		}
+	}
+	
+	.item {
+		margin-left: -0.5em;
+		width: 200px;
+	}
+	
+	#mailSection {
+		height: 32em;
+		
+		span {
+			width: 100%;
+		}
+	}
+}
+}
+
+

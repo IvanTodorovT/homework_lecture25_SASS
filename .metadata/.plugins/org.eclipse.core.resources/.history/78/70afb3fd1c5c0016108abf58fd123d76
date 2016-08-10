@@ -1,0 +1,17 @@
+@mixin triangleBackground {
+	padding: 1em;
+	background-image: url(https://s32.postimg.org/pga5xs82d/triangle.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@mixin radioColumn{
+-webkit-column-count: 4; /* Chrome, Safari, Opera */
+			-moz-column-count: 4; /* Firefox */
+			column-count: 4;
+			-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+			-moz-column-gap: 40px; /* Firefox */
+			column-gap: 40px;}

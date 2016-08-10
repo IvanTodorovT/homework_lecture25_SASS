@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My First Web</title>
+<link rel="stylesheet" type="text/css" href="assets/css/zad7.css">
+</head>
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.mySlides2 {
+	display: none;
+}
+</style>
+
+<body>
+
+	<header id="firstHead">
+		<h1>MOVIES</h1>
+		<nav id="firstNav">
+
+			<div id="firstDiv">
+				<i><font size="3px"><div style="text-align: right"
+							color="white">
+
+							<a href="" style="text-decoration: none">HOME</a>&emsp;
+
+							<div class="dropdown">
+								<span style="text-decoration: none">ABOUT</span>&emsp;
+								<div class="dropdown-content">
+									<p>first option</p>
+									<p>second option</p>
+									<p>third option</p>
+
+								</div>
+							</div>
+
+
+
+							<a href="#" style="text-decoration: none">MOST POPULAR</a>&emsp;
+							<div class="dropdown">
+								<span style="text-decoration: none">NEWS</span>&emsp;
+								<div class="dropdown-content">
+									<p>first option</p>
+									<p>second option</p>
+									<p>third option</p>
+									<p>fourth option</p>
+									<p>fifth option</p>
+
+								</div>
+							</div>
+
+							<a href="#" style="text-decoration: none">CONTACTS</a>&emsp;
+						</div>
+		</nav>
+	</header>
+
+	<header id="secondHead">
+		<nav id="secondNav">
+
+
+			<div id="secondDiv">
+				<i><font size="5px"><div style="text-align: center"
+							color="white">
+
+							<br> <input type="submit" value="CINEMA MOVIES" id="btn4">&emsp;
+							<input type="submit" value="TV SERIES" id="btn4">&emsp; <input
+								type="submit" value="CARTOONS" id="btn4">&emsp; <input
+								type="submit" value="АNIME" id="btn4">&emsp; <input
+								type="submit" value="NEW MOVIES" id="btn4">&emsp; <input
+								type="submit" value="HD MOVIES" id="btn4">&emsp;
+
+						</div>
+		</nav>
+	</header>
+
+	<section>
+
+		<div class="w3-content w3-section" style="max-width: 100%">
+			<img class="mySlides2" src="assets/images/exmachina.jpg"
+				style="width: 100%"> <img class="mySlides2"
+				src="assets/images/mad-max.jpg" style="width: 100%"> <img
+				class="mySlides2" src="assets/images/xman.jpg" style="width: 100%">
+			<img class="mySlides2" src="assets/images/taken.jpg"
+				style="width: 100%"> <img class="mySlides2"
+				src="assets/images/lol.jpg" style="width: 100%">
+		</div>
+
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides2");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) {
+					myIndex = 1
+				}
+				x[myIndex - 1].style.display = "block";
+				setTimeout(carousel, 3000);
+			}
+		</script>
+
+	</section>
+
+	<section id="radio">
+		<h1>Whatch your favorite movies online</h1>
+		<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit.
+			Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris.
+			Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque
+			penatibus et magnis dis parturientmontes nascetur ridiculus mus.
+			Nulla dui. Fusce feugiat ma lesuada odio. Morbi nunc odio gravida
+			atcursus nec.</p>
+		<br>
+
+		<div id="radioBtn">
+			<input type="radio" value="dr" name="Action"><label>
+				Action <br> <input type="radio" value="dr" name="Adventure"><label>
+					Adventure <br>
+			</label> <input type="radio" value="mr" name="Animation"><label>
+					Animation <br>
+			</label> <input type="radio" value="mrs" name="Biography"><label>
+					Biography <br>
+			</label> <input type="radio" value="ms" name="Comedy"><label>
+					Comedy <br> <input type="radio" value="dr" name="Crime"><label>
+						Crime <br>
+				</label> <input type="radio" value="mr" name="Documntery"><label>
+						Documntery <br>
+				</label> <input type="radio" value="mrs" name="Drama"><label>
+						Drama <br> <input type="radio" value="dr" name="Family"><label>
+							Family <br>
+					</label> <input type="radio" value="mr" name="Fantasy"><label>
+							Fantasy <br>
+					</label> <input type="radio" value="mrs" name="game-show"><label>
+							game-show <br>
+					</label> <input type="radio" value="ms" name="History"><label>
+							History <br> <input type="radio" value="dr" name="Horror"><label>
+								Horror <br>
+						</label> <input type="radio" value="mr" name="Kids"><label>
+								Kids <br>
+						</label> <input type="radio" value="mrs" name="Music"><label>
+								Music <br>
+						</label> <input type="radio" value="ms" name="Musical"><label>
+								Musical <br> <input type="radio" value="dr" name="Mystery"><label>
+									Mystery <br>
+							</label> <input type="radio" value="mr" name="News"><label>
+									News <br>
+							</label> <input type="radio" value="mrs" name="Romance"><label>
+									Romance <br> <input type="radio" value="dr" name="Sci-Fi"><label>
+										Sci-Fi <br>
+								</label> <input type="radio" value="mr" name="Short"><label>
+										Short <br>
+								</label> <input type="radio" value="mrs" name="Sport"><label>
+										Sport <br>
+								</label> <input type="radio" value="ms" name="Thriller"><label>
+										Thriller <br> <input type="radio" value="dr" name="War"><label>
+											War <br>
+									</label> <input type="radio" value="mr" name="Western"><label>
+											Western </label> <br>
+		</div>
+
+		<input class="button" type="submit" value="Search" id="btn">
+
+	</section>
+
+	<section id="movieSection">
+		<h1>More movies</h1>
+
+
+		<table style="width: 520px" align="center" cellspacing="20">
+			<tbody>
+
+				<tr>
+					<td><div class="item">
+							<img src="assets/images/page-1_img01.jpg" alt="no-image"
+								width="250" height="250">
+
+							<div class="item-overlay top"></div>
+						</div></td>
+					<td><div class="item">
+							<img src="assets/images/page-1_img02.jpg" alt="no-image"
+								width="250" height="250">
+
+							<div class="item-overlay top"></div>
+						</div></td>
+					<td><div class="item">
+							<img src="assets/images/page-1_img03.jpg" alt="no-image"
+								width="250" height="250">
+
+							<div class="item-overlay top"></div>
+						</div></td>
+					<td><div class="item">
+							<img src="assets/images/page-1_img04.jpg" alt="no-image"
+								width="250" height="250">
+
+							<div class="item-overlay top"></div>
+						</div></td>
+				</tr>
+
+				<tr>
+					<td><a href="" style="text-decoration: none">Cum stoque
+							penat<br>2015
+					</a>
+					<td><a href="" style="text-decoration: none">Fibus et
+							magnis<br>2015
+					</a>
+					<td><a href="" style="text-decoration: none">Cum sociis<br>2015
+					</a>
+					<td><a href="" style="text-decoration: none">Natoque penus
+							et<br>2015
+					</a>
+				</tr>
+
+				<tr>
+					<td><div class="item">
+							<img src="assets/images/page-1_img05.jpg" alt="pepsi" width="250"
+								height="250">
+
+							<div class="item-overlay top"></div>
+						</div></td>
+					<td><div class="item">
+							<img src="assets/images/page-1_img06.jpg" alt="pepsi" width="250"
+								height="250">
+
+							<div class="item-overlay top"></div>
+						</div></td>
+					<td><div class="item">
+							<img src="assets/images/page-1_img07.jpg" alt="pepsi" width="250"
+								height="250">
+
+							<div class="item-overlay top"></div>
+						</div></td>
+					<td><div class="item">
+							<img src="assets/images/page-1_img08.jpg" alt="pepsi" width="250"
+								height="250">
+
+							<div class="item-overlay top"></div>
+						</div></td>
+				</tr>
+				<tr>
+					<td><a href="" style="text-decoration: none">Natoque penat<br>2015
+					</a>
+					<td><a href="" style="text-decoration: none">Fibus et
+							magnis<br>2015
+					</a>
+					<td><a href="" style="text-decoration: none">Cum stoque
+							penat<br>2015
+					</a>
+					<td><a href="" style="text-decoration: none">Natoque penus<br>2015
+					</a>
+				</tr>
+			</tbody>
+		</table>
+
+		<input class="button" type="submit" value="VIEW MORE" id="btn2">
+
+	</section>
+
+	<section id="redSection">
+		<h1>Testimonials</h1>
+
+		<title>W3.CSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<body>
+
+			<div class="w3-content" style="max-width: 800px; position: relative"
+				align="middle">
+
+				<img class="mySlides" src="assets/images/man.png" style="width: 22%"
+					longdesc="#description"> <img class="mySlides"
+					src="assets/images/man2.png" style="width: 22%"
+					longdesc="#description"> <img class="mySlides"
+					src="assets/images/man3.png" style="width: 22%"
+					longdesc="#description"> <img class="mySlides"
+					src="assets/images/man4.png" style="width: 22%"
+					longdesc="#description"> <a class="w3-btn-floating"
+					style="position: absolute; top: 45%; left: 0"
+					onclick="plusDivs(-1)">❮</a> <a class="w3-btn-floating"
+					style="position: absolute; top: 45%; right: 0"
+					onclick="plusDivs(1)">❯</a>
+
+			</div>
+
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+					showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					if (n > x.length) {
+						slideIndex = 1
+					}
+					if (n < 1) {
+						slideIndex = x.length
+					}
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					x[slideIndex - 1].style.display = "block";
+				}
+			</script>
+
+			<p>
+			<h3>Movie fan</h3>
+			</p>
+
+
+			<p id="decription">Lorem Ipsum е елементарен примерен текст,
+				използван в печатарската и типографската индустрия. Lorem Ipsum е
+				индустриален стандарт от около 1500 година, когато неизвестен
+				печатар взема няколко печатарски букви и ги разбърква, за да
+				напечата с тях книга с примерни шрифтове.</p>
+	</section>
+
+	<section class="content bgcolor-1" id="mailSection">
+		<h1>Mail Us</h1>
+
+		<span class="input input--haruki"> <input
+			class="input__field input__field--haruki" type="text" id="input-1" />
+			<label class="input__label input__label--haruki" for="input-1">
+				<span class="input__label-content input__label-content--haruki">Your
+					Name</span>
+		</label>
+		</span> <span class="input input--haruki"> <input
+			class="input__field input__field--haruki" type="text" id="input-2" />
+			<label class="input__label input__label--haruki" for="input-2">
+				<span class="input__label-content input__label-content--haruki">Your
+					email</span>
+		</label>
+		</span><br> <span class="input3 input3--haruki"> <input
+			class="input__field input__field--haruki" type="text" id="input-3" />
+			<label class="input__label input__label--haruki" for="input-3">
+				<span class="input__label-content input__label-content--haruki">Your
+					Message</span>
+		</label>
+		</span> <input class="button" type="submit" value="SEND" id="btn3">
+
+	</section>
+
+	<section id="mapSection"></section>
+
+	<footer>
+		<h3>Questions? Call Us Toll Free:(012)123-456-7890</h3>
+
+	</footer>
+
+	<div id="menu">
+		<div class="blog zoomimg"></div>
+
+		<div class="music zoomimg"></div>
+		<div class="projects zoomimg"></div>
+		<div class="bio zoomimg"></div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+@mixin triangleBackground {
+	padding: 1em;
+	background-image: url(https://s32.postimg.org/pga5xs82d/triangle.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

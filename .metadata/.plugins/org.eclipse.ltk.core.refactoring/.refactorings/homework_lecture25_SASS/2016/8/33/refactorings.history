@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;homework_lecture25_SASS/assets/css/zad7.css&apos; to &apos;zad7_OLD.css&apos;" description="Rename resource &apos;zad7.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="assets/css/zad7.css" name="zad7_OLD.css" stamp="1470839564547" updateReferences="true"/>
+</session>
